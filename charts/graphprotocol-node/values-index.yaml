@@ -33,7 +33,7 @@ tolerations: []
 affinity: {}
 
 config:
-  ipfs: http://ipfs-ipfs:5001/
+  ipfs: http://ipfs-staging-ipfs:5001/
   chains:
     fuji:
       providers:
@@ -45,7 +45,7 @@ postgres:
   db: node
   host: postgresql-staging
   replicaHost: postgresql-staging
-  user: node
+  user: postgres
   password:
     fromSecret:
       name: postgresql-staging
