@@ -1,0 +1,109 @@
+apiVersion: v1
+entries:
+  graph-grafana-dashboards:
+  - apiVersion: v2
+    created: "2022-10-31T09:56:17.875540794Z"
+    description: A dumb helm chart to deploy grafana dashboard jsons
+    digest: 5d5cc5b091af8a910635b48121d583ef8309cb2639ff3bfcee59eb6a9bdbb155
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graph-grafana-dashboards
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/graph-grafana-dashboards-0.1.0/graph-grafana-dashboards-0.1.0.tgz
+    version: 0.1.0
+  graphprotocol-indexer-agent:
+  - apiVersion: v2
+    appVersion: v0.17.0
+    created: "2022-10-31T09:56:18.000588622Z"
+    description: A Helm chart for Graph Protocol Indexer components
+    digest: be5531cc5d2219453fb7c92dd771a3dbff22edcf00541565d5203f2dd6ea867f
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-indexer-agent
+    sources:
+    - https://github.com/graphprotocol/indexer
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/graphprotocol-indexer-agent-0.1.0/graphprotocol-indexer-agent-0.1.0.tgz
+    version: 0.1.0
+  graphprotocol-indexer-service:
+  - apiVersion: v2
+    appVersion: v0.17.0
+    created: "2022-10-31T09:56:18.144984757Z"
+    description: A Helm chart for Graph Protocol Indexer components
+    digest: 89e9b8266e6610123cbc0224da98319f71d6b0832f426916153a755afad268f9
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-indexer-service
+    sources:
+    - https://github.com/graphprotocol/indexer
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/graphprotocol-indexer-service-0.1.0/graphprotocol-indexer-service-0.1.0.tgz
+    version: 0.1.0
+  graphprotocol-node:
+  - apiVersion: v2
+    appVersion: v0.24.1
+    created: "2022-10-31T09:56:18.308725498Z"
+    description: A Helm chart for Graph Protocol Nodes
+    digest: 3fa5de27b8cf789ef0f12a8817fc3e936c1ada25fec5b4fef890b4f02b899fe8
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-node
+    sources:
+    - https://github.com/graphprotocol/graph-node
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/graphprotocol-node-0.1.0/graphprotocol-node-0.1.0.tgz
+    version: 0.1.0
+  ipfs:
+  - apiVersion: v1
+    appVersion: v0.9.1
+    created: "2022-10-31T09:56:18.451389696Z"
+    description: Helm chart for the Interplanetary File System
+    digest: 583d0ee754e3afe835d97efda71b3f1cc8ef051dd2ddecbc7cc37cb7d847c016
+    home: https://ipfs.io/
+    icon: https://raw.githubusercontent.com/ipfs/logo/master/raster-generated/ipfs-logo-128-ice-text.png
+    keywords:
+    - ipfs
+    - distributed-web
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: ipfs
+    sources:
+    - https://github.com/ipfs/go-ipfs
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/ipfs-0.4.5/ipfs-0.4.5.tgz
+    version: 0.4.5
+  postgres:
+  - apiVersion: v2
+    created: "2022-10-31T09:56:18.56909507Z"
+    description: A Helm chart for deploying Zolando postgres CRD to k8s.
+    digest: d9a6bc171756b8c171c11d4addca860c9fc92ef6ab99db3c68273f6bf94b6df9
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-31T09:56:18.56910087Z"
