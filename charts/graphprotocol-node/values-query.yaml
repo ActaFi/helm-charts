@@ -1,3 +1,36 @@
+replicaCount: 1
+image:
+  repository: graphprotocol/graph-node
+  pullPolicy: IfNotPresent
+  tag: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  annotations: {}
+  type: ClusterIP
+  metricsPort: 8040
+  jsonRpcPort: 8020
+  graphqlPort: 8000
+  graphqlWsPort: 8001
+  indexPort: 8030
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
 config:
   ipfs: http://ipfs-ipfs:5001/
   chains:
