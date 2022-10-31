@@ -26,13 +26,13 @@ global:
     ##
     auth:
       postgresPassword: ""
-      username: ""
+      username: "node"
       password: ""
-      database: ""
-      existingSecret: ""
+      database: "node"
+      existingSecret: "postgresql-staging"
       secretKeys:
         adminPasswordKey: ""
-        userPasswordKey: ""
+        userPasswordKey: "password"
         replicationPasswordKey: ""
     ## @param global.postgresql.service.ports.postgresql PostgreSQL service port (overrides `service.ports.postgresql`)
     ##
