@@ -61,6 +61,8 @@ resources:
     cpu: 100m
     memory: 200Mi
 
+blockIngestorNodeId: index_node
+
 role: "query-node"
 
 monitoring:
