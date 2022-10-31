@@ -13,7 +13,7 @@ actafi` to see the charts.
 
 To install the <chart-name> chart:
 
-    helm install graph-node actafi/<chart-name>
+    helm install ipfs-staging actafi/ipfs -f charts/ipfs/values.yaml -n adafi
 
 To uninstall the chart:
 
