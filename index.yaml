@@ -56,6 +56,25 @@ entries:
   graphprotocol-node:
   - apiVersion: v2
     appVersion: v0.24.1
+    created: "2022-11-02T11:13:33.813922444Z"
+    description: A Helm chart for Graph Protocol Nodes
+    digest: a5e2f1f3dd4aef86d27073345708959b3a94064902fa2c43d4f53eed02575dc9
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-node
+    sources:
+    - https://github.com/graphprotocol/graph-node
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/graphprotocol-node-0.1.6/graphprotocol-node-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: v0.24.1
     created: "2022-10-31T14:53:05.808794027Z"
     description: A Helm chart for Graph Protocol Nodes
     digest: 4ac86f3fcfbe25ffe3e61a664562bd139bbb56e9e5948786f3fee26faa889b9f
@@ -304,4 +323,4 @@ entries:
     urls:
     - https://github.com/ActaFi/helm-charts/releases/download/postgresql-12.0.0/postgresql-12.0.0.tgz
     version: 12.0.0
-generated: "2022-10-31T14:53:05.994114478Z"
+generated: "2022-11-02T11:13:33.814011845Z"
