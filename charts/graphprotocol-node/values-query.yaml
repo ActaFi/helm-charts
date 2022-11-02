@@ -37,7 +37,7 @@ config:
     fuji:
       providers:
       - label: fuji
-        url: https://api.avax-test.network/ext/bc/C/rpc
+        url: https://avalanche-fuji.infura.io/v3/31eb485f02894528b7918805d1f4609a
         features: [ archive ]
 
 postgres:
@@ -76,12 +76,6 @@ ingress:
 
 # If you are using standalone installation option it could be useful for you to enable ingress to allow your application outside of the cluster connect to query-nodes by graphql websocket.
 ingressWebsocket:
-  enabled: false
+  enabled: true
   hosts:
-  - graph-ws.example.com
-  tls:
-  - hosts:
-    - graph-ws.example.com
-    secretName: query-node-ws-https
-  annotations:
-    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  - subgraph-ws-test.p2p.finance

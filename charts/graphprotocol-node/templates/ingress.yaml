@@ -37,16 +37,6 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
-  {{- if .Values.ingressWebsocket.tls }}
-  tls:
-    {{- range .Values.ingressWebsocket.tls }}
-    - hosts:
-        {{- range .hosts }}
-        - {{ . | quote }}
-        {{- end }}
-      secretName: {{ .secretName }}
-    {{- end }}
-  {{- end }}
   rules:
     {{- range .Values.ingressWebsocket.hosts }}
     - host: {{ . | quote }}
@@ -55,7 +45,9 @@ spec:
           - path: /
             pathType: Prefix
             backend:
-              serviceName: {{ include "graphprotocol-node.fullname" $ }}
-              servicePort: graphql-ws
+              service:
+                name: {{ include "graphprotocol-node.fullname" $ }}
+                port: 
+                  name: graphql-ws
     {{- end }}
 {{- end }}
