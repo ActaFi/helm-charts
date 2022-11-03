@@ -38,7 +38,7 @@ config:
     fuji:
       providers:
       - label: fuji
-        url: https://avalanche-fuji.infura.io/v3/31eb485f02894528b7918805d1f4609a
+        url: https://chain-testnet.actafi.org/ext/bc/C/rpc
         features: [ archive ]
 
 postgres:

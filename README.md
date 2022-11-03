@@ -14,6 +14,8 @@ actafi` to see the charts.
 To install the <chart-name> chart:
 
     helm install ipfs-staging actafi/ipfs -f charts/ipfs/values.yaml -n adafi
+    helm install graph-query-staging actafi/graphprotocol-node -f charts/graphprotocol-node/values-query.yaml -n adafi
+    helm upgrade graph-index-staging actafi/graphprotocol-node -f charts/graphprotocol-node/values-index.yaml -n adafi
 
 To uninstall the chart:
 
