@@ -56,6 +56,25 @@ entries:
   graphprotocol-node:
   - apiVersion: v2
     appVersion: v0.24.1
+    created: "2022-11-08T07:51:04.583440507Z"
+    description: A Helm chart for Graph Protocol Nodes
+    digest: a96cd627223796087643a42f364bff205dcd16e3b996011aa23db119733946ac
+    home: https://thegraph.com/
+    keywords:
+    - graphprotocol
+    - ethereum
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: graphprotocol-node
+    sources:
+    - https://github.com/graphprotocol/graph-node
+    type: application
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/graphprotocol-node-0.1.9/graphprotocol-node-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
+    appVersion: v0.24.1
     created: "2022-11-03T06:57:55.585125361Z"
     description: A Helm chart for Graph Protocol Nodes
     digest: 4aeb1e2f65d6f6ea11912e8027bbb178fef8bd3af44f4af1a9585bfb36566022
@@ -209,6 +228,25 @@ entries:
   ipfs:
   - apiVersion: v1
     appVersion: v0.9.1
+    created: "2022-11-08T07:51:04.820692277Z"
+    description: Helm chart for the Interplanetary File System
+    digest: 89ff8da0c47f6fbf291c16a5358eecc918df5d95cfe2a353b0949154a0f879e7
+    home: https://ipfs.io/
+    icon: https://raw.githubusercontent.com/ipfs/logo/master/raster-generated/ipfs-logo-128-ice-text.png
+    keywords:
+    - ipfs
+    - distributed-web
+    maintainers:
+    - email: dm3ch@dm3ch.net
+      name: dm3ch
+    name: ipfs
+    sources:
+    - https://github.com/ipfs/go-ipfs
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/ipfs-0.4.8/ipfs-0.4.8.tgz
+    version: 0.4.8
+  - apiVersion: v1
+    appVersion: v0.9.1
     created: "2022-11-03T06:57:55.706699623Z"
     description: Helm chart for the Interplanetary File System
     digest: 5e17384dae24ff099c2ecd3352b8cd807b07a359bd682056ab955842a71a2ce0
@@ -278,6 +316,40 @@ entries:
     - https://github.com/ActaFi/helm-charts/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
     version: 0.1.0
   postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 15.0.0
+    created: "2022-11-08T07:51:05.025351912Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 05fe555f2b42b09dba1226ddafc12aeacfe41ee4cb4a0cfc85ca9dc0f554a171
+    home: https://github.com/bitnami/charts/tree/main/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://github.com/ActaFi/helm-charts/releases/download/postgresql-12.0.4/postgresql-12.0.4.tgz
+    version: 12.0.4
   - annotations:
       category: Database
     apiVersion: v2
@@ -414,4 +486,4 @@ entries:
     urls:
     - https://github.com/ActaFi/helm-charts/releases/download/postgresql-12.0.0/postgresql-12.0.0.tgz
     version: 12.0.0
-generated: "2022-11-03T06:57:55.844983545Z"
+generated: "2022-11-08T07:51:05.025397911Z"
