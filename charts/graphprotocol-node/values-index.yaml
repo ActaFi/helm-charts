@@ -43,7 +43,7 @@ config:
 
 postgres:
   db: node
-  host: postgresql-staging
+  host: subgraph.c4mrhzdfel89.us-east-1.rds.amazonaws.com
   replicaHost: postgresql-staging
   user: postgres
   password:
@@ -53,11 +53,11 @@ postgres:
 
 resources:
   requests:
+    cpu: 250m
+    memory: 500Mi
+  limits:
     cpu: 500m
     memory: 1Gi
-  limits:
-    cpu: 1
-    memory: 2Gi
 
 blockIngestorNodeId: index_node
 

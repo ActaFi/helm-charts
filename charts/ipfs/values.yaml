@@ -55,7 +55,13 @@ swarm:
   ## Configure ports in allowable range (eg. 30000 - 32767 on minikube)
   # nodePort: 34001
 
-resources: {}
+resources:
+  requests:
+    cpu: 100m
+    memory: 200Mi
+  limits:
+    cpu: 200m
+    memory: 500Mi
 
 persistence:
   enabled: true

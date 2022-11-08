@@ -42,7 +42,7 @@ config:
 
 postgres:
   db: node
-  host: postgresql-staging
+  host: subgraph.c4mrhzdfel89.us-east-1.rds.amazonaws.com
   replicaHost: postgresql-staging
   user: postgres
   password:
