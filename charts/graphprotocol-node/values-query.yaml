@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: graphprotocol/graph-node
   pullPolicy: IfNotPresent
-  tag: ""
+  tag: "v0.29.0" # v0.24.1
 
 imagePullSecrets: []
 nameOverride: ""
